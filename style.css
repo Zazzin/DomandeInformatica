@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* RESET */
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+/* BASE */
+html{
+    scroll-behavior:smooth;
+}
+
+/* BASE / MOBILE FIRST */
+body{
+    font-family:'Inter', sans-serif;
+    background:#111;
+    color:#e6e6e6;
+    font-size:25px; /* aumentato da 14px a 16px */
+    line-height:1.5;
+}
+
+/* FULL SCREEN ATTACCATO AI LATI */
+.container{
+    width:100%;
+    padding:18px; /* spazio minimo dai bordi */
+}
+
+/* TITOLI */
+h1{
+    font-size:18px;
+    margin-bottom:14px;
+    font-weight:600;
+}
+
+/* DOMANDA */
+.domanda{
+    border-left:3px solid #aaa;
+    padding:10px 12px;
+    margin-bottom:6px;
+    background:#1b1b1b;
+    font-size:14px;
+}
+
+.domanda em{
+    font-style:italic;
+    color:#dcdcdc;
+}
+
+/* LINK RISPOSTA */
+.link-risposta{
+    display:inline-block;
+    margin-bottom:22px;
+    color:#8ab4ff;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.link-risposta:hover{
+    text-decoration:underline;
+}
+
+/* SPAZIO */
+.spazio{
+    height:700px;
+}
+
+/* RISPOSTE */
+.risposte p{
+    margin:14px 0;
+    font-size:14px;
+}
+
+/* TABLET */
+@media (min-width:768px){
+    .container{
+        padding:28px;
+    }
+
+    body{
+        font-size:15px;
+    }
+
+    h1{
+        font-size:20px;
+    }
+}
+
+/* DESKTOP */
+@media (min-width:1200px){
+    .container{
+        padding:40px 60px; /* attaccato ma respirato */
+    }
+
+    body{
+        font-size:16px;
+    }
+
+    h1{
+        font-size:22px;
+    }
+}
+
+/* evidenzia la risposta quando ci arrivi con l'ancora */
+.risposte p:target{
+    animation: highlight 4s ease;
+}
+
+/* animazione gialla */
+@keyframes highlight{
+    0%{
+        background:rgba(255,255,0,0.9);
+        color:black;
+    }
+    100%{
+        background:transparent;
+        color:inherit;
+    }
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #8ab4ff;
+    color: #111;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: background 0.3s;
+    z-index: 9999;
+}
+
+#backToTop:hover {
+    background: #5c8df6;
+}

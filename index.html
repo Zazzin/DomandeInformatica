@@ -1,13 +1,198 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DomandeInformatica</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
+<!--
+ISTRUZIONI:
+    - Mettere le classi corrette:
+        - Per fare domanda: class="domanda"
+        - Per fare l'ancora (a): #risposta ed il numero dopo di quello che c'è già
+        - Per fare la risposta (p): l'ID uguale della risposta ma senza #
 
+    - Non toccare il CSS
+
+    - Non toccare il HTML
+
+    - Per fare una domanda usare la seguente struttura, dentro il div container:
+    <blockquote class="domanda">
+        <strong>Domanda (inserisci numero di domanda corretta):</strong> 
+        <em>La tua domanda</em>
+    </blockquote>
+    <a href="#inserireIDCoretto" class="link-risposta">Risposta</a>
+
+    - Per fare la risposta usare la seguente struttura, dentro il div risposte:
+    <p id="inserireIDCoretto"><strong>Risposta (inserisci numero della risposta corretta):</strong> La tua risposta</p>
+
+-->
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Domande Informatica</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<button id="backToTop" title="Torna su">↑</button>
+
+<script>
+    const btn = document.getElementById('backToTop');
+    btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+<body>
+
+<div class="container">
+<h1>Domande</h1>
+
+<!-- DOMANDE -->
+<blockquote class="domanda"><strong>Domanda 1:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta1" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 2:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta2" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 3:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta3" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 4:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta4" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 5:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta5" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 6:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta6" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 7:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta7" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 8:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta8" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 9:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta9" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 10:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta10" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 11:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta11" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 12:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta12" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 13:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta13" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 14:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta14" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 15:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta15" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 16:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta16" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 17:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta17" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 18:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta18" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 19:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta19" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 20:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta20" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 21:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta21" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 22:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta22" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 23:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta23" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 24:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta24" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 25:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta25" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 26:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta26" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 27:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta27" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 28:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta28" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 29:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta29" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 30:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta30" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 31:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta31" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 32:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta32" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 33:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta33" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 34:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta34" class="link-risposta">Risposta</a>
+
+<blockquote class="domanda"><strong>Domanda 35:</strong> <em>spazio libero, inserisci la domanda</em></blockquote>
+<a href="#risposta35" class="link-risposta">Risposta</a>
+
+
+<div class="spazio"></div>
+
+<h1 class="titolo-risposte">Risposte</h1>
+
+<div class="risposte">
+<!-- RISPOSTE 1-35 -->
+<p id="risposta1"><strong>Risposta 1:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta2"><strong>Risposta 2:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta3"><strong>Risposta 3:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta4"><strong>Risposta 4:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta5"><strong>Risposta 5:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta6"><strong>Risposta 6:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta7"><strong>Risposta 7:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta8"><strong>Risposta 8:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta9"><strong>Risposta 9:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta10"><strong>Risposta 10:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta11"><strong>Risposta 11:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta12"><strong>Risposta 12:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta13"><strong>Risposta 13:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta14"><strong>Risposta 14:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta15"><strong>Risposta 15:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta16"><strong>Risposta 16:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta17"><strong>Risposta 17:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta18"><strong>Risposta 18:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta19"><strong>Risposta 19:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta20"><strong>Risposta 20:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta21"><strong>Risposta 21:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta22"><strong>Risposta 22:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta23"><strong>Risposta 23:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta24"><strong>Risposta 24:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta25"><strong>Risposta 25:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta26"><strong>Risposta 26:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta27"><strong>Risposta 27:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta28"><strong>Risposta 28:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta29"><strong>Risposta 29:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta30"><strong>Risposta 30:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta31"><strong>Risposta 31:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta32"><strong>Risposta 32:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta33"><strong>Risposta 33:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta34"><strong>Risposta 34:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+<p id="risposta35"><strong>Risposta 35:</strong> spazio libero inserisci la risposta relativa alla domanda</p>
+</div>
+
+</div>
 </body>
 </html>
